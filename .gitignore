@@ -1,0 +1,49 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Node / frontend build
+frontend/node_modules/
+frontend/dist/
+
+# Local app data (connections, tasks, comparison history, stored reports)
+backend/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated / downloaded reports
+*.pdf
+reports/
+exports/
+downloads/
+
+# Runtime JDBC bridge logs (may contain credentials)
+backend/drivers/cmds.jsonl
+backend/drivers/*.jsonl
+
+# Bundled runtime / release packages (not source)
+release/
+release-locked/
+backend/jdk/
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# OS / IDE / logs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+*.tmp
+*.temp
